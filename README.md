@@ -153,8 +153,7 @@ Requirements for `Rectangle`s:
 
 -   Rectangles should be instantiated with `Rectangle.new(3, 4)` to create a
     rectangle with a length of 3 and a width of 4.
--   Instances of Rectangle should respond to the `#area` method and give the
-    correct result.
+-   Instances of Rectangle should respond to the `#calculate_area` method and give the correct result.
 -   Do not override anything that doesn't need to be overriden.
 
 Next, create a `Square` class that inherits from `Rectangle`.
@@ -163,7 +162,7 @@ Requirements for `Square`s:
 
 -   Squares should be instantiated with `Square.new(4)` to create a square with
     all sides equal to 4.
--   Instances of Square should respond to the `#area` method and give the
+-   Instances of Square should respond to the `#calculate_area` method and give the
     correct result.
 -   Do not override anything that doesn't need to be overriden.
 

@@ -24,13 +24,20 @@ describe 'Rectangle' do
   it 'has setters for @side_length' do
     expect { subject.side_length = 4 }.not_to raise_error
   end
+
+  it 'has the correct area' do
+    expect(subject.calculate_area).to eq(40)
+  end
+
+  describe '@color' do
+    it 'is not set on initialization' do
+      expect(subject.instance_variables).not_to include(:@color)
+    end
+
+    it 'is set after assignment' do
+      subject.color = 'red'
+      expect(subject.instance_variables).to include(:@color)
+    end
+  end
 end
 
-  # describe ".calculate_area" do
-  #   it "should calculate area for a given side length" do
-  #     expect(Rectangle.new(4,10).calculate_area.round(2)).to eq(100.00)
-  #     expect(Rectangle.new(6,5).calculate_area.round(2)).to eq(64.95)
-  #     expect(Rectangle.new(9,13).calculate_area.round(2)).to eq(1044.73)
-  #   end
-  #   end
-# end

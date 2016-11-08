@@ -1,17 +1,16 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
-# Object Inheritence in Ruby (versus JavaScript)
+# Object Inheritence in Ruby
 
 ## Prerequisites
 
--   [ga-wdi-boston/ruby-vs-js-objects](https://github.com/ga-wdi-boston/ruby-vs-js-objects)
+-   [ga-wdi-boston/ruby-object](https://github.com/ga-wdi-boston/ruby-object)
 
 ## Objectives
 
 By the end of this, students should be able to:
 
--   Diagram the Ruby method lookup chain, and compare it to the JavaScript
-    prototype lookup chain.
+-   Diagram the Ruby method lookup chain
 -   Write a class which inherits from another class.
 
 ## Preparation
@@ -19,27 +18,7 @@ By the end of this, students should be able to:
 1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
     this repository.
 1.  Install dependencies with `bundle install`.
-
-## JavaScript Inheritance
-
-Remember how JavaScript method lookup works? We use prototypes. Here's an
-example:
-
-```javascript
-User.prototype.totalDistance = function() {
-  let result = 0;
-
-  for (let i = 0; i < this.runs.length; i++) {
-    result += this.runs[i].distance;
-  }
-
-  return result;
-}
-```
-
-We defined methods by attaching them to the prototype of the User object. New
-instances of User will "inherit" their methods from the User prototype. In this
-example, all instances of User share the common property `totalDistance`.
+1. Create a `training` branch and checkout to it.
 
 ## Ruby Inheriterance
 

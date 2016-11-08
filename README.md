@@ -149,6 +149,8 @@ constructor method inside `Rectangle` to take two sides of different lengths.
 Since all rectangles have four sides, you can set a default value for `@sides`
 inside `Rectangle`'s constructor.
 
+Test your code with `bin/rake test`.
+
 Requirements for `Rectangle`s:
 
 -   Rectangles should be instantiated with `Rectangle.new(3, 4)` to create a

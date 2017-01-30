@@ -39,5 +39,12 @@ describe 'Rectangle' do
       expect(subject.instance_variables).to include(:@color)
     end
   end
-end
 
+  describe '.calculate_area' do
+    it 'should calculate area for a given side length' do
+      expect(Rectangle.new(4, 10).calculate_area.round(2)).to eq(40)
+      expect(Rectangle.new(6, 5).calculate_area.round(2)).to eq(30)
+      expect(Rectangle.new(9, 13).calculate_area.round(2)).to eq(117)
+    end
+  end
+end

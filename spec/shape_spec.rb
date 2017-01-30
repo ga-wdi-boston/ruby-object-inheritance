@@ -1,4 +1,3 @@
-# rubocop:disable BlockLength
 require_relative '../lib/shape.rb'
 
 describe 'Shape' do
@@ -39,11 +38,11 @@ describe 'Shape' do
     end
   end
 
-  describe '.calculate_area' do
-    it 'should calculate area for a given side length' do
-      expect(Shape.new(4, 10).calculate_area.round(2)).to eq(100.00)
-      expect(Shape.new(6, 5).calculate_area.round(2)).to eq(64.95)
-      expect(Shape.new(9, 13).calculate_area.round(2)).to eq(1044.73)
+  describe ".calculate_area" do
+    it "should calculate area for a given side length" do
+      expect(Shape.new(4,10).calculate_area.round(2)).to eq(100.00)
+      expect(Shape.new(6,5).calculate_area.round(2)).to eq(64.95)
+      expect(Shape.new(9,13).calculate_area.round(2)).to eq(1044.73)
     end
   end
 end

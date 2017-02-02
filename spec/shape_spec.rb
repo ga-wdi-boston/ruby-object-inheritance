@@ -1,4 +1,5 @@
-# rubocop:disable BlockLength
+# frozen_string_literal: true
+
 require_relative '../lib/shape.rb'
 
 describe 'Shape' do

@@ -123,10 +123,9 @@ you were asked to create and use a `Shape` class.
 
 A `Rectangle` is a `Shape`, and a `Square` is a `Rectangle`.
 
-Create a `Rectangle` that inherits from `Shape`. You will need to override the
-constructor method inside `Rectangle` to take two sides of different lengths.
-Since all rectangles have four sides, you can set a default value for `@sides`
-inside `Rectangle`'s constructor.
+Create a `Rectangle` in [`lib/rectangle.rb`](lib/rectangle.rb) that inherits
+from `Shape`. You will need to override the constructor method inside `Rectangle` to take two sides of different lengths. Since all rectangles have four sides,
+you can set a default value for `@sides` inside `Rectangle`'s constructor.
 
 Test your code with `bin/rake test`.
 
@@ -137,7 +136,8 @@ Requirements for `Rectangle`s:
 -   Instances of Rectangle should respond to the `#calculate_area` method and give the correct result.
 -   Do not override anything that doesn't need to be overriden.
 
-Next, create a `Square` class that inherits from `Rectangle`.
+Next, create a `Square` class in [`lib/square.rb`](lib/square.rb`) that inherits
+from `Rectangle`.
 
 Requirements for `Square`s:
 

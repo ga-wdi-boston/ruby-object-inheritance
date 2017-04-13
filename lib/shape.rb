@@ -1,6 +1,4 @@
-# frozen_string_literal: true
-
-# Describes a shape with equal sides
+# Class that describes a shape with sides of equal length
 class Shape
   attr_reader :num_sides
   attr_accessor :color, :side_length
